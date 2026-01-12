@@ -3,7 +3,6 @@ import ErrorBoundary from "./components/ErrorBoundary.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import ConfettiTrigger from "./components/ConfettiTrigger.jsx";
-import MusicVisualizer from "./components/MusicVisualizer.jsx";
 import DarkModeToggle from "./components/DarkModeToggle.jsx";
 import FloatingActionButton from "./components/FloatingActionButton.jsx";
 import ScratchCard from "./components/ScratchCard.jsx";
@@ -14,7 +13,6 @@ import SectionNav from "./components/SectionNav.jsx";
 import DividerQuote from "./components/DividerQuote.jsx";
 import SurpriseEasterEgg from "./components/SurpriseEasterEgg.jsx";
 import FloatingMessages from "./components/FloatingMessages.jsx";
-import BirthdayMilestone from "./components/BirthdayMilestone.jsx";
 import ScrollTriggerMessage from "./components/ScrollTriggerMessage.jsx";
 import ParticleBackground from "./components/ParticleBackground.jsx";
 import LoveCalculator from "./components/LoveCalculator.jsx";
@@ -96,7 +94,6 @@ function App() {
       <ParticleBackground />
       <FloatingHearts />
       <Balloons />
-      <BirthdayMilestone />
       <FloatingMessages />
       <ScrollTriggerMessage />
       <SurpriseEasterEgg />
@@ -126,17 +123,14 @@ function App() {
 
           {/* Auto-play song when lamp is on */}
           {lampOn && (
-            <>
-              <audio 
-                autoPlay 
-                loop 
-                onError={() => console.warn("Audio file not found or failed to load")}
-              >
-                <source src="/song.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-              <MusicVisualizer isPlaying={lampOn} />
-            </>
+            <audio 
+              autoPlay 
+              loop 
+              onError={() => console.warn("Audio file not found or failed to load")}
+            >
+              <source src="/song.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
           )}
           
           <div className="utility-controls" role="toolbar" aria-label="Site controls">

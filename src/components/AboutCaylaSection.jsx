@@ -32,10 +32,7 @@ const AboutCaylaSection = memo(function AboutCaylaSection() {
         </div>
         <div className="about-photo">
           <div className="photo-card">
-            <div className="photo-placeholder">
-              Your photo here
-              <span>The one that always looks most like you.</span>
-            </div>
+            <img src="/photo1.png" alt="Cayla" className="about-image" />
             <p className="caption">
               I can't always explain why I love you this much.
               But every time I see you, the answer becomes clear.

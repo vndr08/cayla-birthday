@@ -16,6 +16,12 @@ function ParticleBackground() {
       return; // don't run animation
     }
 
+    // Disable particles on mobile for performance
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      return; // skip particle animation on mobile
+    }
+
     let animationId;
     let isRunning = true;
 

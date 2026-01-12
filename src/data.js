@@ -37,18 +37,22 @@ export const galleryPhotos = [
   {
     label: "Ordinary moments turned extraordinary",
     note: "Random moments with you that somehow became my favorite memories. The ones I didn't plan to keep, but can't bear to forget.",
+    image: "/photos2.png",
   },
   {
     label: "Coming home together",
     note: "Tired, but everything feels lighter when you're beside me. That's when I know I'm exactly where I need to be.",
+    image: "/photos3.png",
   },
   {
     label: "The photo you hate, but I love",
     note: "You say you're not photogenic. But I always love seeing you like this—real, unguarded, beautifully you.",
+    image: "/photos4.png",
   },
   {
     label: "Laughter that makes us forget time",
     note: "I don't remember what we were talking about. I just remember your laugh, and how it made everything feel right.",
+    image: "/photos5.png",
   },
 ];
 

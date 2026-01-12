@@ -11,9 +11,14 @@ const GallerySection = memo(function GallerySection() {
           {galleryPhotos.map((photo, index) => (
             <div key={index} className="gallery-card">
               <div className="gallery-photo-placeholder">
-                <span className="photo-emoji">📸</span>
-                <span className="photo-label">{photo.label}</span>
-                <span className="photo-hint">✨ Your memory here</span>
+                {photo.image ? (
+                  <img src={photo.image} alt={photo.label} className="gallery-photo" />
+                ) : (
+                  <>
+                    <span className="photo-emoji">📸</span>
+                    <span className="photo-hint">✨ Your memory here</span>
+                  </>
+                )}
               </div>
               <p className="caption">{photo.note}</p>
             </div>
