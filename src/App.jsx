@@ -4,12 +4,10 @@ import LoadingScreen from "./components/LoadingScreen.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import ConfettiTrigger from "./components/ConfettiTrigger.jsx";
 import DarkModeToggle from "./components/DarkModeToggle.jsx";
-import FloatingActionButton from "./components/FloatingActionButton.jsx";
 import ScratchCard from "./components/ScratchCard.jsx";
 import IntroGate from "./components/IntroGate.jsx";
 import LightSwitchAnimation from "./components/LightSwitchAnimation.jsx";
-import EffectsToggle from "./components/EffectsToggle.jsx";
-import SectionNav from "./components/SectionNav.jsx";
+
 import DividerQuote from "./components/DividerQuote.jsx";
 import SurpriseEasterEgg from "./components/SurpriseEasterEgg.jsx";
 import FloatingMessages from "./components/FloatingMessages.jsx";
@@ -82,9 +80,6 @@ function App() {
       {/* Dark Mode Toggle */}
       <DarkModeToggle />
 
-      {/* Floating Action Button */}
-      <FloatingActionButton />
-
       {/* Custom Cursor */}
       <CustomCursor />
 
@@ -133,11 +128,6 @@ function App() {
             </audio>
           )}
           
-          <div className="utility-controls" role="toolbar" aria-label="Site controls">
-            <EffectsToggle />
-          </div>
-          <SectionNav />
-
           <HeroSection />
           <DividerQuote text="Your birthday comes once a year. But I want you to feel celebrated every day." />
 
